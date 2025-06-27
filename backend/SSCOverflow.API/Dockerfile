@@ -4,8 +4,8 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
-COPY . .
-RUN ls -la && dotnet publish ./SSCOverflow.API.csproj -c Release -o /app/publish
+COPY studentoverflow/backend/SSCOverflow.API/. .
+RUN dotnet publish SSCOverflow.API.csproj -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
