@@ -1,0 +1,11 @@
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Core\bin\Release\net9.0\SSCOverflow.Core.deps.json
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Core\bin\Release\net9.0\SSCOverflow.Core.dll
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Core\bin\Release\net9.0\SSCOverflow.Core.pdb
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Core\obj\Release\net9.0\SSCOverflow.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Core\obj\Release\net9.0\SSCOverflow.Core.AssemblyInfoInputs.cache
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Core\obj\Release\net9.0\SSCOverflow.Core.AssemblyInfo.cs
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Core\obj\Release\net9.0\SSCOverflow.Core.csproj.CoreCompileInputs.cache
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Core\obj\Release\net9.0\SSCOverflow.Core.dll
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Core\obj\Release\net9.0\refint\SSCOverflow.Core.dll
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Core\obj\Release\net9.0\SSCOverflow.Core.pdb
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Core\obj\Release\net9.0\ref\SSCOverflow.Core.dll

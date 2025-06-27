@@ -1,0 +1,15 @@
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\bin\Debug\net9.0\SSCOverflow.Infrastructure.deps.json
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\bin\Debug\net9.0\SSCOverflow.Infrastructure.dll
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\bin\Debug\net9.0\SSCOverflow.Infrastructure.pdb
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\bin\Debug\net9.0\SSCOverflow.Core.dll
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\bin\Debug\net9.0\SSCOverflow.Core.pdb
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\obj\Debug\net9.0\SSCOverflow.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\obj\Debug\net9.0\SSCOverflow.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\obj\Debug\net9.0\SSCOverflow.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\obj\Debug\net9.0\SSCOverflow.Infrastructure.AssemblyInfo.cs
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\obj\Debug\net9.0\SSCOverflow.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\obj\Debug\net9.0\SSCOverf.43CA8C22.Up2Date
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\obj\Debug\net9.0\SSCOverflow.Infrastructure.dll
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\obj\Debug\net9.0\refint\SSCOverflow.Infrastructure.dll
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\obj\Debug\net9.0\SSCOverflow.Infrastructure.pdb
+C:\Users\ashis\OneDrive\Desktop\sscoverflow\backend\SSCOverflow.Infrastructure\obj\Debug\net9.0\ref\SSCOverflow.Infrastructure.dll
