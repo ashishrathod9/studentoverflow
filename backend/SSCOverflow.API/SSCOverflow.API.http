@@ -1,0 +1,6 @@
+@SSCOverflow.API_HostAddress = http://localhost:5128
+
+GET {{SSCOverflow.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

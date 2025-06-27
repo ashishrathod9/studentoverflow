@@ -1,0 +1,262 @@
+{
+  "info": {
+    "_postman_id": "ssc-overflow-collection-001",
+    "name": "SSCOverflow API All Endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"student123\",\n  \"email\": \"student123@example.com\",\n  \"password\": \"MySecurePassword!\",\n  \"fullName\": \"Student Example\"\n}"
+            },
+            "url": { "raw": "http://localhost:5000/api/auth/register", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "auth", "register"] }
+          }
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"student123\",\n  \"password\": \"MySecurePassword!\"\n}"
+            },
+            "url": { "raw": "http://localhost:5000/api/auth/login", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "auth", "login"] }
+          }
+        },
+        {
+          "name": "Get Users",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/auth/users", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "auth", "users"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Questions",
+      "item": [
+        {
+          "name": "Get All Questions",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/questions", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "questions"] }
+          }
+        },
+        {
+          "name": "Get Question by ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/questions/1", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "questions", "1"] }
+          }
+        },
+        {
+          "name": "Create Question",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Sample Question\",\n  \"content\": \"What is the answer to this?\",\n  \"tags\": [\"math\", \"ssc\"]\n}"
+            },
+            "url": { "raw": "http://localhost:5000/api/questions", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "questions"] }
+          }
+        },
+        {
+          "name": "Update Question",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Updated Question\",\n  \"content\": \"Updated content\",\n  \"tags\": [\"science\"]\n}"
+            },
+            "url": { "raw": "http://localhost:5000/api/questions/1", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "questions", "1"] }
+          }
+        },
+        {
+          "name": "Delete Question",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://localhost:5000/api/questions/1", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "questions", "1"] }
+          }
+        },
+        {
+          "name": "Search Questions",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/questions/search?query=math", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "questions", "search"], "query": [{"key": "query", "value": "math"}] }
+          }
+        },
+        {
+          "name": "Get Questions by Tag",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/questions/tag/math", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "questions", "tag", "math"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Answers",
+      "item": [
+        {
+          "name": "Get Answers by Question",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/answers/question/1", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "answers", "question", "1"] }
+          }
+        },
+        {
+          "name": "Create Answer",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"questionId\": 1,\n  \"content\": \"This is an answer.\"\n}"
+            },
+            "url": { "raw": "http://localhost:5000/api/answers", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "answers"] }
+          }
+        },
+        {
+          "name": "Update Answer",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"content\": \"Updated answer.\"\n}"
+            },
+            "url": { "raw": "http://localhost:5000/api/answers/1", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "answers", "1"] }
+          }
+        },
+        {
+          "name": "Delete Answer",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://localhost:5000/api/answers/1", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "answers", "1"] }
+          }
+        },
+        {
+          "name": "Accept Answer",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "http://localhost:5000/api/answers/1/accept", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "answers", "1", "accept"] }
+          }
+        },
+        {
+          "name": "Vote Answer",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"voteType\": 1\n}"
+            },
+            "url": { "raw": "http://localhost:5000/api/answers/1/vote", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "answers", "1", "vote"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chat",
+      "item": [
+        {
+          "name": "Send Message",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"Hello, AI!\"\n}"
+            },
+            "url": { "raw": "http://localhost:5000/api/chat", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "chat"] }
+          }
+        },
+        {
+          "name": "Get Chat History",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/chat/history", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "chat", "history"] }
+          }
+        },
+        {
+          "name": "Clear Chat History",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://localhost:5000/api/chat/history", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "chat", "history"] }
+          }
+        },
+        {
+          "name": "Get New Session",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/chat/session", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "chat", "session"] }
+          }
+        },
+        {
+          "name": "Debug Config",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/chat/debug-config", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "chat", "debug-config"] }
+          }
+        },
+        {
+          "name": "Test Gemini",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/chat/test-gemini", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "chat", "test-gemini"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Past Papers",
+      "item": [
+        {
+          "name": "Scrape All Papers",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/pastpapersscrape/scrape", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "pastpapersscrape", "scrape"] }
+          }
+        },
+        {
+          "name": "Search Papers",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/api/pastpapersscrape/search?keyword=maths&year=2021&board=gujarat", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "pastpapersscrape", "search"], "query": [
+              { "key": "keyword", "value": "maths" },
+              { "key": "year", "value": "2021" },
+              { "key": "board", "value": "gujarat" }
+            ] }
+          }
+        }
+      ]
+    }
+  ]
+} 
