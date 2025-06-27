@@ -8,20 +8,14 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-# Copy project file(s) first for better layer caching
-COPY *.sln ./
-COPY */*.csproj ./
-RUN for file in $(ls *.csproj); do mkdir -p ${file%.*}/ && mv $file ${file%.*}/; done
+# Copy everything and restore dependencies
+COPY . .
 
 # Restore dependencies
 RUN dotnet restore
 
-# Copy the rest of the source code
-COPY . .
-
 # Build and publish the application
-WORKDIR /src
-RUN dotnet publish -c Release -o /app/publish --no-restore
+RUN dotnet publish -c Release -o /app/publish
 
 # Final stage - copy the published app to the runtime image
 FROM base AS final
